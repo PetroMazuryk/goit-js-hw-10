@@ -75,19 +75,19 @@ function filterCountriesOptions({
   };
 }
 
-// function renderCountriesList(countries) {
-//   const markup = countries
-//     .map(({ flags, nameOficial }) => {
-//       return `<li class="country-item">
-//         <p class="country-item__text">
-//           <img src="${flags}" alt="is ${nameOficial} flag" width="24" />
-//         ${nameOficial}
-//         </p>
-//       </li>`;
-//     })
-//     .join('');
-//   refs.countryList.innerHTML = markup;
-// }
+function renderCountriesList(countries) {
+  const markup = countries
+    .map(({ flags, nameOficial }) => {
+      return `<li class="country-item">
+        <p class="country-item__text">
+          <img src="${flags}" alt="is ${nameOficial} flag" width="24" />
+        ${nameOficial}
+        </p>
+      </li>`;
+    })
+    .join('');
+  refs.countryList.innerHTML = markup;
+}
 
 function renderCountriesCard(countries) {
   const markup = countries
